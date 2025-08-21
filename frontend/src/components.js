@@ -774,7 +774,7 @@ export const Lessons = ({ setCurrentPage }) => {
 
         {showAuthMessage && (
           <div className="fixed top-4 right-4 bg-red-500 text-white px-6 py-4 rounded-lg shadow-lg z-50">
-            <p>Войдите в систему, чтобы проходить уроки</p>
+            <p>سجل دخولك لحضور الدروس</p>
           </div>
         )}
 
