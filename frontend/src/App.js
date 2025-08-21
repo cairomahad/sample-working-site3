@@ -268,17 +268,17 @@ const AboutPage = () => {
         </div>
 
         <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Связаться с нами</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">تواصل معنا</h2>
           <p className="text-gray-700 mb-4">
-            Если у вас есть вопросы или предложения, мы всегда готовы помочь.
+            إذا كانت لديك أسئلة أو اقتراحات، فنحن دائماً مستعدون للمساعدة.
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h4 className="font-semibold text-gray-900 mb-2">Email:</h4>
+              <h4 className="font-semibold text-gray-900 mb-2">البريد الإلكتروني:</h4>
               <p className="text-teal-600">info@uroki-islama.ru</p>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 mb-2">Техническая поддержка:</h4>
+              <h4 className="font-semibold text-gray-900 mb-2">الدعم التقني:</h4>
               <p className="text-teal-600">support@uroki-islama.ru</p>
             </div>
           </div>
