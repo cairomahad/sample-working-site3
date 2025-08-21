@@ -282,15 +282,20 @@ export const Header = () => {
                 )}
                 
                 {currentUser && (
-                  <button
-                    onClick={() => {
-                      handleLogout();
-                      setShowMobileMenu(false);
-                    }}
-                    className="block w-full text-right px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50"
-                  >
-                    تسجيل الخروج
-                  </button>
+                  <div>
+                    <div className="px-3 py-2 text-sm text-gray-500">
+                      مرحباً، {currentUser.displayName || currentUser.email}
+                    </div>
+                    <button
+                      onClick={() => {
+                        handleLogout();
+                        setShowMobileMenu(false);
+                      }}
+                      className="block w-full text-right px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50"
+                    >
+                      تسجيل الخروج
+                    </button>
+                  </div>
                 )}
               </div>
             </div>
