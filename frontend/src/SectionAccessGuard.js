@@ -53,6 +53,8 @@ export const SectionAccessGuard = ({ section, sectionTitle, children }) => {
   const handleAccessGranted = (email) => {
     setUserEmail(email);
     localStorage.setItem('user_email', email);
+    // Сохраняем информацию о предоставленном доступе к этому разделу
+    localStorage.setItem(`section_access_${section}`, 'granted');
     setHasAccess(true);
     setShowPromocodeEntry(false);
   };
