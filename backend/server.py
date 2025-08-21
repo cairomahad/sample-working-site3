@@ -26,12 +26,17 @@ from models import *
 
 # Import Supabase client
 try:
-    from supabase_client import supabase_client
-    SUPABASE_AVAILABLE = True
-    print("✅ Supabase client доступен")
-except ImportError:
+    from supabase_client import get_supabase_client
+    supabase_client = get_supabase_client()
+    SUPABASE_AVAILABLE = supabase_client is not None
+    if SUPABASE_AVAILABLE:
+        print("✅ Supabase client доступен")
+    else:
+        print("❌ Supabase client недоступен")
+except ImportError as e:
     SUPABASE_AVAILABLE = False
-    print("❌ Supabase client недоступен")
+    supabase_client = None
+    print(f"❌ Supabase client недоступен: {e}")
 
 import shutil
 import aiofiles
