@@ -724,7 +724,7 @@ export const Lessons = ({ setCurrentPage }) => {
       image: "https://images.pexels.com/photos/7249250/pexels-photo-7249250.jpeg",
       duration: "15 мин",
       questions: 10,
-      difficulty: "Легко"
+      difficulty: "سهل"
     },
     {
       id: 2,
