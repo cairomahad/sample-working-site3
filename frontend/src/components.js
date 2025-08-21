@@ -325,7 +325,7 @@ export const AuthModal = ({ onClose }) => {
     e.preventDefault();
     
     if (!email || !password || (!isLogin && !name)) {
-      setError('Пожалуйста, заполните все поля');
+      setError('يرجى ملء جميع الحقول');
       return;
     }
 
@@ -346,7 +346,7 @@ export const AuthModal = ({ onClose }) => {
         // If user is admin, redirect to admin panel
         if (result.isAdmin) {
           // Show success message for admin
-          alert('Добро пожаловать в админ панель!');
+          alert('مرحباً بك في لوحة الإدارة!');
           // Force page reload to show admin panel
           window.location.reload();
         }
@@ -354,7 +354,7 @@ export const AuthModal = ({ onClose }) => {
         setError(result.error);
       }
     } catch (error) {
-      setError('Произошла ошибка. Попробуйте снова.');
+      setError('حدث خطأ. يرجى المحاولة مرة أخرى.');
     }
     
     setLoading(false);
@@ -362,10 +362,10 @@ export const AuthModal = ({ onClose }) => {
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-      <div className="bg-white p-8 rounded-lg max-w-md w-full mx-4">
+      <div className="bg-white p-8 rounded-lg max-w-md w-full mx-4" dir="rtl">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-gray-800">
-            {isLogin ? 'Вход' : 'Регистрация'}
+            {isLogin ? 'تسجيل الدخول' : 'التسجيل'}
           </h2>
           <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -374,50 +374,55 @@ export const AuthModal = ({ onClose }) => {
           </button>
         </div>
 
-
+        {error && (
+          <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+            {error}
+          </div>
+        )}
 
         <form onSubmit={handleSubmit}>
           {!isLogin && (
             <div className="mb-4">
               <label className="block text-gray-700 text-sm font-bold mb-2">
-                Имя
+                الاسم
               </label>
               <input
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-teal-500"
+                className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-teal-500 text-right"
                 required={!isLogin}
+                placeholder="أدخل اسمك"
               />
             </div>
           )}
           
           <div className="mb-4">
             <label className="block text-gray-700 text-sm font-bold mb-2">
-              Email
+              البريد الإلكتروني
             </label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-teal-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-teal-500 text-left"
               required
-              placeholder={isLogin ? "Введите ваш email" : "example@domain.com"}
+              placeholder={isLogin ? "أدخل بريدك الإلكتروني" : "example@domain.com"}
             />
           </div>
 
           <div className="mb-6">
             <label className="block text-gray-700 text-sm font-bold mb-2">
-              Пароль
+              كلمة المرور
             </label>
             <input
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-teal-500"
+              className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-teal-500 text-left"
               required
               minLength={6}
-              placeholder="Введите пароль"
+              placeholder="أدخل كلمة المرور"
             />
           </div>
 
@@ -426,7 +431,7 @@ export const AuthModal = ({ onClose }) => {
             disabled={loading}
             className="w-full bg-teal-500 text-white py-2 px-4 rounded hover:bg-teal-600  disabled:opacity-50"
           >
-            {loading ? 'Загрузка...' : (isLogin ? 'Войти' : 'Зарегистрироваться')}
+            {loading ? 'جاري التحميل...' : (isLogin ? 'تسجيل الدخول' : 'التسجيل')}
           </button>
         </form>
 
@@ -435,7 +440,7 @@ export const AuthModal = ({ onClose }) => {
             onClick={() => setIsLogin(!isLogin)}
             className="text-teal-500 hover:text-teal-600"
           >
-            {isLogin ? 'Нет аккаунта? Зарегистрируйтесь' : 'Уже есть аккаунт? Войдите'}
+            {isLogin ? 'ليس لديك حساب؟ سجل الآن' : 'لديك حساب بالفعل؟ سجل دخولك'}
           </button>
         </div>
       </div>
