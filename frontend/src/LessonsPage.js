@@ -52,7 +52,7 @@ export const LessonsPage = () => {
             setShowPremiumInfo(true);
           }
         } catch (error) {
-          console.error('Ошибка проверки доступа:', error);
+          console.error('خطأ في التحقق من الوصول:', error);
           // Показываем информацию о премиум курсе при ошибке
           setSelectedPremiumCourse(course);
           setUserEmail(currentUser?.email || '');
