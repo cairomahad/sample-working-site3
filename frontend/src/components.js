@@ -633,7 +633,7 @@ export const Leaderboard = () => {
 
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           <div className="bg-gradient-to-r from-teal-500 to-blue-500 px-6 py-4">
-            <h2 className="text-2xl font-bold text-white">Рейтинг учеников</h2>
+            <h2 className="text-2xl font-bold text-white">تصنيف الطلاب</h2>
           </div>
           
           <div className="p-6">
