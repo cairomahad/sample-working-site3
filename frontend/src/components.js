@@ -275,9 +275,9 @@ export const Header = () => {
                       setShowAuthModal(true);
                       setShowMobileMenu(false);
                     }}
-                    className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-white bg-teal-500 hover:bg-teal-600"
+                    className="block w-full text-right px-3 py-2 rounded-md text-base font-medium text-white bg-teal-500 hover:bg-teal-600"
                   >
-                    Войти
+                    تسجيل الدخول
                   </button>
                 )}
                 
