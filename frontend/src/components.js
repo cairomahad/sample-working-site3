@@ -856,8 +856,8 @@ export const Lessons = ({ setCurrentPage }) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900">Получение баллов</h3>
-                <p className="text-gray-600 text-sm">За каждый правильный ответ получайте +1 балл</p>
+                <h3 className="font-semibold text-gray-900">الحصول على النقاط</h3>
+                <p className="text-gray-600 text-sm">احصل على +1 نقطة لكل إجابة صحيحة</p>
               </div>
             </div>
           </div>
