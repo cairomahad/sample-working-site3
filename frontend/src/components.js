@@ -768,8 +768,8 @@ export const Lessons = ({ setCurrentPage }) => {
     <div className="min-h-screen bg-gradient-to-br from-white to-teal-50 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Уроки ислама</h1>
-          <p className="text-lg text-gray-600">Изучите 4 самых важных предмета для верующего</p>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">دروس الإسلام</h1>
+          <p className="text-lg text-gray-600">تعلم 4 من أهم المواضيع للمؤمن</p>
         </div>
 
         {showAuthMessage && (
