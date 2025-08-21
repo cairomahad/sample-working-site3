@@ -672,7 +672,7 @@ export const Leaderboard = () => {
                       
                       <div className="min-w-0 flex-1">
                         <h3 className="font-semibold text-base sm:text-lg text-gray-900 truncate">
-                          {leader.name || 'Аноним'}
+                          {leader.name || 'مجهول'}
                         </h3>
                         <p className="text-gray-600 text-xs sm:text-sm hidden sm:block">
                           Зарегистрирован: {leader.createdAt?.toDate ? leader.createdAt.toDate().toLocaleDateString('ru-RU') : leader.createdAt?.toLocaleDateString('ru-RU') || 'Недавно'}
