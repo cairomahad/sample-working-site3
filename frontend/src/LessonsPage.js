@@ -484,7 +484,7 @@ export const CourseLessonsPage = ({ course }) => {
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            ← Назад к урокам
+            ← العودة إلى الدروس
           </button>
           <h1 className="text-3xl md:text-4xl font-bold mb-2">{course.title}</h1>
           <p className="text-xl text-teal-100">
