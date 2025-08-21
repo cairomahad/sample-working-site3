@@ -737,8 +737,8 @@ export const Lessons = ({ setCurrentPage }) => {
     },
     {
       id: 3,
-      title: "Этика ислама",
-      description: "Изучите моральные принципы и этические нормы",
+      title: "أخلاق الإسلام",
+      description: "تعلم المبادئ الأخلاقية والقيم الإسلامية",
       image: "https://images.pexels.com/photos/32470206/pexels-photo-32470206.jpeg",
       duration: "25 мин",
       questions: 12,
