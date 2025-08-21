@@ -12,7 +12,7 @@ from datetime import datetime
 import uuid
 
 # Configuration
-BASE_URL = "https://data-bridge-15.preview.emergentagent.com/api"
+BASE_URL = "https://data-access-1.preview.emergentagent.com/api"
 ADMIN_CREDENTIALS = [
     {"username": "admin", "password": "admin123"},
     {"username": "miftahulum", "password": "197724"}
