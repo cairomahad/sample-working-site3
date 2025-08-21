@@ -103,8 +103,7 @@ const TestTakingComponent = () => {
       setResult(response.data);
     } catch (error) {
       console.error('Error submitting test:', error);
-      alert('خطأ في إرسال الاختبار
-');
+      alert('خطأ في إرسال الاختبار');
     }
     setSubmitting(false);
   };
