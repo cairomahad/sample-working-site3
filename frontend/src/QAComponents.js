@@ -5,17 +5,17 @@ import { useNavigate, useParams } from 'react-router-dom';
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
-// Маппинг категорий на русские названия
+// Маппинг категорий на арабские названия
 const CATEGORY_NAMES = {
-  'aqidah': 'Вероучение',
-  'ibadah': 'Поклонение',
-  'muamalat': 'Взаимоотношения', 
-  'akhlaq': 'Нравственность',
-  'fiqh': 'Фикх',
-  'hadith': 'Хадисы',
-  'quran': 'Коран',
-  'seerah': 'Жизнеописание Пророка',
-  'general': 'Общие вопросы'
+  'aqidah': 'العقيدة',
+  'ibadah': 'العبادة',
+  'muamalat': 'المعاملات', 
+  'akhlaq': 'الأخلاق',
+  'fiqh': 'الفقه',
+  'hadith': 'الحديث',
+  'quran': 'القرآن',
+  'seerah': 'السيرة النبوية',
+  'general': 'أسئلة عامة'
 };
 
 // Компонент категории
