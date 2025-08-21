@@ -821,7 +821,7 @@ export const Lessons = ({ setCurrentPage }) => {
                   onClick={() => handleStartLesson(lesson.id)}
                   className="w-full bg-teal-500 text-white py-3 px-4 rounded-lg hover:bg-teal-600  font-medium"
                 >
-                  Начать урок
+                  ابدأ الدرس
                 </button>
               </div>
             </div>
