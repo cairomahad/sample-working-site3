@@ -1057,13 +1057,13 @@ export const Quiz = ({ lessonId, setCurrentPage }) => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-white to-teal-50 flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Требуется авторизация</h2>
-          <p className="text-gray-600 mb-6">Войдите в систему, чтобы проходить тесты</p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">المصادقة مطلوبة</h2>
+          <p className="text-gray-600 mb-6">سجل دخولك لإجراء الاختبارات</p>
           <button
             onClick={() => setCurrentPage('home')}
             className="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600 "
           >
-            Вернуться на главную
+            العودة إلى الرئيسية
           </button>
         </div>
       </div>
