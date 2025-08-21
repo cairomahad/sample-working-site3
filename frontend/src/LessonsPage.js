@@ -191,7 +191,7 @@ export const LessonsPage = () => {
                 {/* Premium Badge */}
                 {config.isPremium && (
                   <div className="absolute -top-2 -right-2 bg-gradient-to-r from-amber-400 to-amber-500 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg z-10">
-                    ⭐ ПРЕМИУМ
+                    ⭐ مميز
                   </div>
                 )}
                 
