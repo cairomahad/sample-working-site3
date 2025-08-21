@@ -830,7 +830,7 @@ export const Lessons = ({ setCurrentPage }) => {
 
         <div className="mt-16 text-center">
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Как проходит обучение?</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">كيف يتم التعلم؟</h2>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
