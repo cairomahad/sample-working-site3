@@ -117,7 +117,7 @@ setLoading(false);
           </div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2">الوصول إلى القسم</h2>
           <p className="text-gray-600">
-            Для доступа к разделу "{sectionTitle}" необходим промокод
+            للوصول إلى قسم "{sectionTitle}" تحتاج إلى رمز ترويجي
           </p>
         </div>
 
