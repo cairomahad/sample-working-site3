@@ -639,8 +639,8 @@ export const Leaderboard = () => {
           <div className="p-6">
             {leaders.length === 0 ? (
               <div className="text-center py-12">
-                <p className="text-gray-500 text-lg">Пока никто не прошел тесты</p>
-                <p className="text-gray-400">Станьте первым!</p>
+                <p className="text-gray-500 text-lg">لم يجتز أحد الاختبارات بعد</p>
+                <p className="text-gray-400">كن الأول!</p>
               </div>
             ) : (
               <div className="space-y-4">
