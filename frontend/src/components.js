@@ -125,61 +125,61 @@ export const Header = () => {
 
   return (
     <>
-      <header className="bg-white shadow-sm border-b border-gray-100">
+      <header className="bg-white shadow-sm border-b border-gray-100" dir="rtl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2 space-x-reverse">
               <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">У</span>
+                <span className="text-white font-bold text-lg">د</span>
               </div>
-              <span className="text-2xl font-bold text-teal-600">ИСЛАМА</span>
+              <span className="text-2xl font-bold text-teal-600">دروس الإسلام</span>
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex space-x-8 space-x-reverse">
               <Link 
                 to="/"
                 className={`${isCurrentPage('/') && location.pathname === '/' ? 'text-teal-600' : 'text-gray-700'} hover:text-teal-600 font-medium`}
               >
-                Главная
+                الرئيسية
               </Link>
               <Link 
                 to="/lessons"
                 className={`${isCurrentPage('/lessons') ? 'text-teal-600' : 'text-gray-700'} hover:text-teal-600 font-medium`}
               >
-                Уроки
+                الدروس
               </Link>
               <Link 
                 to="/qa"
                 className={`${isCurrentPage('/qa') ? 'text-teal-600' : 'text-gray-700'} hover:text-teal-600 font-medium`}
               >
-                Вопросы и Ответы
+                الأسئلة والأجوبة
               </Link>
               <Link 
                 to="/leaderboard"
                 className={`${isCurrentPage('/leaderboard') ? 'text-teal-600' : 'text-gray-700'} hover:text-teal-600 font-medium `}
               >
-                Лидерборд
+                لوحة المتصدرين
               </Link>
               <Link 
                 to="/about"
                 className={`${isCurrentPage('/about') ? 'text-teal-600' : 'text-gray-700'} hover:text-teal-600 font-medium `}
               >
-                О проекте
+                حول المشروع
               </Link>
             </nav>
 
             {/* Desktop Auth buttons */}
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="hidden md:flex items-center space-x-4 space-x-reverse">
               {currentUser ? (
-                <div className="flex items-center space-x-4">
-                  <span className="text-gray-700 hidden lg:block">Привет, {currentUser.displayName || currentUser.email}</span>
+                <div className="flex items-center space-x-4 space-x-reverse">
+                  <span className="text-gray-700 hidden lg:block">مرحباً، {currentUser.displayName || currentUser.email}</span>
                   <button
                     onClick={handleLogout}
                     className="bg-gray-100 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-200 "
                   >
-                    Выйти
+                    تسجيل الخروج
                   </button>
                 </div>
               ) : (
@@ -187,7 +187,7 @@ export const Header = () => {
                   onClick={() => setShowAuthModal(true)}
                   className="bg-teal-500 text-white px-6 py-2 rounded-lg hover:bg-teal-600  font-medium"
                 >
-                  Войти
+                  تسجيل الدخول
                 </button>
               )}
             </div>
