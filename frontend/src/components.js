@@ -451,36 +451,36 @@ export const AuthModal = ({ onClose }) => {
 // Hero Section Component
 export const HeroSection = ({ onStartLearning }) => {
   return (
-    <section className="relative bg-gradient-to-br from-white to-teal-50 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-white to-teal-50 overflow-hidden" dir="rtl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div className="space-y-8">
             <div>
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                УРОКИ <span className="text-teal-500">ИСЛАМА</span>
+                دروس <span className="text-teal-500">الإسلام</span>
               </h1>
               <p className="text-2xl text-gray-600 mt-4">
-                Ваш первый учитель
+                معلمك الأول
               </p>
             </div>
             
             <p className="text-lg text-gray-700 leading-relaxed">
-              Образовательная платформа об основах ислама для начинающих мусульман
+              منصة تعليمية عن أساسيات الإسلام للمسلمين الجدد
             </p>
 
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 sm:space-x-reverse">
               <button
                 onClick={onStartLearning}
                 className="bg-teal-500 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-teal-600   shadow-lg"
               >
-                Начать учиться
+                ابدأ التعلم
               </button>
               <button className="flex items-center text-teal-600 font-medium text-lg hover:text-teal-700 ">
-                <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 ml-2" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M8 5v14l11-7z"/>
                 </svg>
-                смотреть видео
+                مشاهدة الفيديو
               </button>
             </div>
           </div>
@@ -490,19 +490,19 @@ export const HeroSection = ({ onStartLearning }) => {
             <div className="relative z-10">
               <img
                 src="https://github.com/ksrktes1/-/blob/main/ChatGPT%20Image%2012%20%D0%B0%D0%B2%D0%B3.%202025%20%D0%B3.,%2002_22_48.png?raw=true"
-                alt="Красивая мечеть на закате"
+                alt="مسجد جميل عند الغروب"
                 className="w-full h-96 object-cover rounded-2xl shadow-2xl"
               />
             </div>
             {/* Decorative elements */}
-            <div className="absolute top-4 right-4 w-24 h-24 bg-teal-200 rounded-full opacity-20"></div>
-            <div className="absolute bottom-4 left-4 w-16 h-16 bg-teal-300 rounded-full opacity-30"></div>
+            <div className="absolute top-4 left-4 w-24 h-24 bg-teal-200 rounded-full opacity-20"></div>
+            <div className="absolute bottom-4 right-4 w-16 h-16 bg-teal-300 rounded-full opacity-30"></div>
           </div>
         </div>
       </div>
 
       {/* Decorative SVG shapes */}
-      <div className="absolute top-0 right-0 -mt-16 -mr-16 w-32 h-32 text-teal-100">
+      <div className="absolute top-0 left-0 -mt-16 -ml-16 w-32 h-32 text-teal-100">
         <svg fill="currentColor" viewBox="0 0 100 100">
           <path d="M0,0 L100,0 L100,100 Z" opacity="0.1"/>
         </svg>
