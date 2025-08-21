@@ -11,12 +11,21 @@ export const SectionAccessGuard = ({ section, sectionTitle, children }) => {
   const [userEmail, setUserEmail] = useState('');
 
   useEffect(() => {
-    // Получаем email пользователя из localStorage или запрашиваем
+    // Проверяем, был ли уже введен промокод для этого раздела
+    const savedAccess = localStorage.getItem(`section_access_${section}`);
     const savedEmail = localStorage.getItem('user_email');
-    if (savedEmail) {
+    
+    if (savedAccess === 'granted' && savedEmail) {
+      // Доступ уже был предоставлен ранее
+      setUserEmail(savedEmail);
+      setHasAccess(true);
+      setLoading(false);
+    } else if (savedEmail) {
+      // Есть email, но нет доступа - проверяем через сервер
       setUserEmail(savedEmail);
       checkAccess(savedEmail);
     } else {
+      // Нет ни email, ни доступа
       setLoading(false);
       setShowPromocodeEntry(true);
     }
