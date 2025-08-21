@@ -134,7 +134,7 @@ export const QAMainPage = () => {
       setRecentQuestions(recentRes.data);
       setPopularQuestions(popularRes.data);
     } catch (error) {
-      console.error('Ошибка загрузки данных Q&A:', error);
+      console.error('خطأ في تحميل بيانات الأسئلة والأجوبة:', error);
     }
     setLoading(false);
   };
