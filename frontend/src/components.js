@@ -728,8 +728,8 @@ export const Lessons = ({ setCurrentPage }) => {
     },
     {
       id: 2,
-      title: "Практика веры",
-      description: "Узнайте о ежедневных практиках и обрядах",
+      title: "ممارسة الإيمان",
+      description: "تعرف على الممارسات والطقوس اليومية",
       image: "https://images.unsplash.com/photo-1582033131298-5bb54c589518",
       duration: "20 мин",
       questions: 15,
