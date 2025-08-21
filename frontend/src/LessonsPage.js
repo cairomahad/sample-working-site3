@@ -112,7 +112,7 @@ export const LessonsPage = () => {
             <path d="M9 11H7v6h2v-6zm4 0h-2v6h2v-6zm4 0h-2v6h2v-6zm2.5-9H19v2h-1.5v17c0 .55-.45 1-1 1h-9c-.55 0-1-.45-1-1V4H5V2h3.5c.28 0 .5-.22.5-.5s.22-.5.5-.5h3c.28 0 .5.22.5.5s.22.5.5.5z"/>
           </svg>
         ),
-        description: 'Мир от сотворения до конца времён. Пророки, Писания, цивилизации.',
+        description: 'العالم من الخلق إلى نهاية الزمان. الأنبياء والكتب والحضارات.',
         hasLiterature: false
       };
     } else if (titleLower.includes('культур')) {
