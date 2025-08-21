@@ -230,7 +230,7 @@ export const Header = () => {
                   }`}
                   onClick={() => setShowMobileMenu(false)}
                 >
-                  Главная
+                  الرئيسية
                 </Link>
                 <Link
                   to="/lessons"
