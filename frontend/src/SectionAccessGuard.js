@@ -10,6 +10,22 @@ export const SectionAccessGuard = ({ section, sectionTitle, children }) => {
   const [showPromocodeEntry, setShowPromocodeEntry] = useState(false);
   const [userEmail, setUserEmail] = useState('');
 
+  // Функция для сброса доступа (для разработчиков/админов)
+  const resetAccess = () => {
+    localStorage.removeItem(`section_access_${section}`);
+    localStorage.removeItem('promocode_entered');
+    localStorage.removeItem('promocode_date');
+    localStorage.removeItem('user_email');
+    setHasAccess(false);
+    setShowPromocodeEntry(true);
+    setUserEmail('');
+  };
+
+  // Добавляем глобальную функцию для сброса (для консоли браузера)
+  if (typeof window !== 'undefined') {
+    window.resetPromocodeAccess = resetAccess;
+  }
+
   useEffect(() => {
     // Проверяем, был ли уже введен промокод для этого раздела
     const savedAccess = localStorage.getItem(`section_access_${section}`);
