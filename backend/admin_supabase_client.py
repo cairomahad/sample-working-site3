@@ -283,5 +283,19 @@ class AdminSupabaseClient:
                 "data": None
             }
 
-# Global instance
-admin_supabase_client = AdminSupabaseClient()
+# Global instance - will be initialized when first imported  
+admin_supabase_client = None
+
+def get_admin_supabase_client():
+    global admin_supabase_client
+    if admin_supabase_client is None:
+        try:
+            admin_supabase_client = AdminSupabaseClient()
+            return admin_supabase_client
+        except Exception as e:
+            print(f"Failed to initialize Admin Supabase client: {e}")
+            return None
+    return admin_supabase_client
+
+# Initialize on import
+admin_supabase_client = get_admin_supabase_client()
