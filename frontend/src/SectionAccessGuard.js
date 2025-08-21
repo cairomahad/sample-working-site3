@@ -100,7 +100,7 @@ setError('');
 if (promocode.trim() === VALID_PROMOCODE) {
   onAccessGranted(email);
 } else {
-  setError('Неверный промокод');
+  setError('رمز ترويجي غير صحيح');
 }
 
 setLoading(false);
