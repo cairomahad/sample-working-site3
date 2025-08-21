@@ -689,7 +689,7 @@ export const Leaderboard = () => {
                       }`}>
                         {leader.totalScore || 0}
                       </div>
-                      <p className="text-gray-500 text-xs sm:text-sm">баллов</p>
+                      <p className="text-gray-500 text-xs sm:text-sm">نقطة</p>
                     </div>
                   </div>
                 ))}
