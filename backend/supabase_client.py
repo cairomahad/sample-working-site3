@@ -218,5 +218,19 @@ class SupabaseClient:
             logger.error(f"Error executing raw SQL: {str(e)}")
             raise
 
-# Global instance
-supabase_client = SupabaseClient()
+# Global instance - will be initialized when first imported
+supabase_client = None
+
+def get_supabase_client():
+    global supabase_client
+    if supabase_client is None:
+        try:
+            supabase_client = SupabaseClient()
+            return supabase_client
+        except Exception as e:
+            logger.error(f"Failed to initialize Supabase client: {e}")
+            return None
+    return supabase_client
+
+# Initialize on import
+supabase_client = get_supabase_client()
