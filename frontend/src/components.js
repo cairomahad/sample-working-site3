@@ -257,7 +257,7 @@ export const Header = () => {
                   }`}
                   onClick={() => setShowMobileMenu(false)}
                 >
-                  Лидерборд
+                  لوحة المتصدرين
                 </Link>
                 <Link
                   to="/about"
