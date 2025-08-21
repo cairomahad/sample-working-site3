@@ -700,10 +700,10 @@ export const Leaderboard = () => {
 
         <div className="mt-8 text-center">
           <p className="text-gray-600">
-            Проходите тесты и набирайте баллы, чтобы попасть в топ!
+            اجتز الاختبارات واكسب النقاط للوصول إلى القمة!
           </p>
           <p className="text-gray-500 text-sm mt-2">
-            За каждый правильный ответ +1 балл
+            لكل إجابة صحيحة +1 نقطة
           </p>
         </div>
       </div>
