@@ -78,8 +78,8 @@ const HomePage = ({ setCurrentPage }) => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Легко!</h3>
-              <p className="text-gray-600">Проходите короткие тесты дома, в дороге или на работе.</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">سهل!</h3>
+              <p className="text-gray-600">خذ اختبارات قصيرة في البيت أو في الطريق أو في العمل.</p>
             </div>
             
             <div className="text-center p-6">
