@@ -43,7 +43,7 @@ const TestTakingComponent = () => {
 
   const handleStartTest = () => {
     if (!userName.trim() || userName.trim().length < 3) {
-      alert('Пожалуйста, введите ваше полное имя (минимум 3 символа)');
+      alert('من فضلك أدخل اسمك الكامل');
       return;
     }
     setShowNameInput(false);
@@ -70,7 +70,7 @@ const TestTakingComponent = () => {
       setAnswers({});
     } catch (error) {
       console.error('Error loading test:', error);
-      alert('Ошибка загрузки теста');
+      alert('خطأ في تحميل الامتحان');
       navigate(-1);
     }
     setLoading(false);
@@ -85,7 +85,7 @@ const TestTakingComponent = () => {
 
   const handleSubmit = async () => {
     if (!userName.trim()) {
-      alert('Пожалуйста, введите ваше имя');
+      alert('من فضلك أدخل اسمك');
       return;
     }
 
@@ -103,7 +103,8 @@ const TestTakingComponent = () => {
       setResult(response.data);
     } catch (error) {
       console.error('Error submitting test:', error);
-      alert('Ошибка при отправке теста');
+      alert('خطأ في إرسال الاختبار
+');
     }
     setSubmitting(false);
   };
@@ -123,7 +124,7 @@ const TestTakingComponent = () => {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Загрузка теста...</p>
+          <p className="text-gray-600">تحميل الاختبار...</p>
         </div>
       </div>
     );
@@ -133,7 +134,7 @@ const TestTakingComponent = () => {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Тест не найден</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">الاختبار غير موجود</h2>
           <button 
             onClick={() => navigate(-1)}
             className="bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700"
@@ -155,13 +156,13 @@ const TestTakingComponent = () => {
                 <span className="text-3xl">{result.is_retake ? '📝' : '🎉'}</span>
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                {result.is_retake ? 'Тест завершен повторно!' : 'Тест завершен!'}
+                {result.is_retake ? 'تم إنهاء الاختبار مرة أخرى!' : 'تم إنهاء الاختبار!'}
               </h2>
               <p className="text-gray-600">{result.message}</p>
               {result.is_retake && (
                 <div className="mt-3 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
                   <p className="text-sm text-yellow-800">
-                    💡 Вы уже проходили этот тест ранее. Баллы начисляются только за первое прохождение.
+                    💡 سبق لك إجراء هذا الاختبار. النقاط تُحسب فقط في المرة الأولى.
                   </p>
                 </div>
               )}
@@ -172,18 +173,18 @@ const TestTakingComponent = () => {
                 <div>
                   <div className="text-2xl font-bold text-teal-600">{result.score}</div>
                   <div className="text-sm text-gray-600">из {result.total_questions}</div>
-                  <div className="text-xs text-gray-500">правильных</div>
+                  <div className="text-xs text-gray-500">صحيحة</div>
                 </div>
                 <div>
                   <div className="text-2xl font-bold text-purple-600">{result.percentage.toFixed(1)}%</div>
-                  <div className="text-xs text-gray-500">результат</div>
+                  <div className="text-xs text-gray-500">النتيجة</div>
                 </div>
                 <div>
                   <div className={`text-2xl font-bold ${result.points_earned > 0 ? 'text-green-600' : 'text-gray-500'}`}>
                     {result.points_earned > 0 ? `+${result.points_earned}` : '0'}
                   </div>
                   <div className="text-xs text-gray-500">
-                    {result.is_retake ? 'повтор' : 'очков получено'}
+                    {result.is_retake ? 'تكرار' : 'نقطة مكتسبة '}
                   </div>
                 </div>
               </div>
@@ -195,7 +196,7 @@ const TestTakingComponent = () => {
             <div className="bg-white rounded-lg shadow-lg p-6 mb-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
                 <span className="text-2xl mr-2">📋</span>
-                Правильные ответы
+                الإجابات الصحيحة
               </h3>
               <div className="space-y-4">
                 {result.correct_answers.map((answer, index) => (
@@ -217,17 +218,17 @@ const TestTakingComponent = () => {
                           </span>
                           <span className="text-gray-900 flex-1">{option}</span>
                           {optIndex === answer.correct_answer && (
-                            <span className="text-green-600 font-medium ml-2">✓ Правильно</span>
+                            <span className="text-green-600 font-medium ml-2">✓ صحيح</span>
                           )}
                           {optIndex === answer.user_answer && optIndex !== answer.correct_answer && (
-                            <span className="text-red-600 font-medium ml-2">✗ Ваш ответ</span>
+                            <span className="text-red-600 font-medium ml-2">✗ جوابك</span>
                           )}
                         </div>
                       ))}
                     </div>
                     <div className="mt-2 text-sm">
                       <span className={`font-medium ${answer.is_correct ? 'text-green-600' : 'text-red-600'}`}>
-                        {answer.is_correct ? '✓ Верно' : '✗ Неверно'}
+                        {answer.is_correct ? '✓ صحيح' : '✗ خطأ'}
                       </span>
                     </div>
                   </div>
@@ -243,19 +244,19 @@ const TestTakingComponent = () => {
                 className="w-full bg-orange-500 text-white py-3 px-6 rounded-lg hover:bg-orange-600  flex items-center justify-center space-x-2"
               >
                 <span>🔄</span>
-                <span>Пройти тест заново</span>
+                <span>إعادة إجراء الاختبار</span>
               </button>
               <button
                 onClick={() => navigate('/leaderboard')}
                 className="w-full bg-teal-600 text-white py-3 px-6 rounded-lg hover:bg-teal-700 "
               >
-                Посмотреть лидерборд
+                مشاهدة لوحة المتصدرين
               </button>
               <button
                 onClick={() => navigate(-1)}
                 className="w-full bg-gray-200 text-gray-700 py-3 px-6 rounded-lg hover:bg-gray-300 "
               >
-                Вернуться к уроку
+                العودة إلى الدرس
               </button>
             </div>
           </div>
@@ -278,15 +279,15 @@ const TestTakingComponent = () => {
               <div className="text-2xl font-bold text-teal-600">
                 {formatTime(timeLeft)}
               </div>
-              <div className="text-sm text-gray-500">осталось времени</div>
+              <div className="text-sm text-gray-500">الوقت المتبقي</div>
             </div>
           </div>
           
           {/* Progress */}
           <div className="mt-4">
             <div className="flex justify-between text-sm text-gray-600 mb-2">
-              <span>Прогресс: {getAnsweredCount()} из {test.questions.length}</span>
-              <span>🏆 5 очков за завершение + по 1 за правильный ответ (только первое прохождение)</span>
+              <span>التقدم: {getAnsweredCount()} из {test.questions.length}</span>
+              <span>🏆 5 نقاط للإنهاء + نقطة واحدة لكل إجابة صحيحة (المحاولة الأولى فقط)</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-2">
               <div 
@@ -300,14 +301,14 @@ const TestTakingComponent = () => {
         {/* Name Input */}
         {showNameInput && (
           <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Представьтесь, пожалуйста</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">من فضلك عرّف بنفسك</h3>
             <div className="space-y-4">
               <div>
                 <input
                   type="text"
                   value={userName}
                   onChange={(e) => setUserName(e.target.value)}
-                  placeholder="Введите ваше имя (например: Ахмед Магомедов)"
+                  placeholder="أدخل اسمك"
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
                   autoFocus
                   onKeyDown={(e) => {
@@ -317,7 +318,7 @@ const TestTakingComponent = () => {
                   }}
                 />
                 <p className="text-sm text-gray-500 mt-2">
-                  Введите ваше имя.
+                  أدخل اسمك.
                 </p>
               </div>
               <button
@@ -325,7 +326,7 @@ const TestTakingComponent = () => {
                 disabled={!userName.trim() || userName.trim().length < 3}
                 className="w-full bg-teal-600 text-white py-3 px-6 rounded-lg hover:bg-teal-700 disabled:bg-gray-400 disabled:cursor-not-allowed "
               >
-                Начать тест
+                بدء الاختبار
               </button>
             </div>
           </div>
@@ -365,7 +366,7 @@ const TestTakingComponent = () => {
             <div className="bg-white rounded-lg shadow-sm p-6">
               <div className="flex justify-between items-center">
                 <div className="text-sm text-gray-600">
-                  Отвечено на {getAnsweredCount()} из {test.questions.length} вопросов
+                  تم الإجابة على {getAnsweredCount()} من أصل {test.questions.length} سؤال
                 </div>
                 <button
                   onClick={handleSubmit}
@@ -375,11 +376,11 @@ const TestTakingComponent = () => {
                   {submitting ? (
                     <>
                       <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
-                      <span>Отправка...</span>
+                      <span>الإرسال...</span>
                     </>
                   ) : (
                     <>
-                      <span>Завершить тест</span>
+                      <span>إنهاء الاختبار</span>
                       <span>🚀</span>
                     </>
                   )}

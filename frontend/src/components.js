@@ -1156,7 +1156,7 @@ export const Quiz = ({ lessonId, setCurrentPage }) => {
                 onClick={() => setCurrentPage('leaderboard')}
                 className="w-full bg-gray-100 text-gray-700 py-3 px-4 rounded-lg hover:bg-gray-200  font-medium"
               >
-                Посмотреть лидерборд
+                مشاهدة لوحة المتصدرين
               </button>
             </div>
           </div>

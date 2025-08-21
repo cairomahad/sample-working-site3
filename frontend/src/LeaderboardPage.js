@@ -27,7 +27,7 @@ const LeaderboardPage = () => {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Загрузка лидерборда...</p>
+          <p className="text-gray-600">تحميل لوحة المتصدرين..</p>
         </div>
       </div>
     );
@@ -37,8 +37,8 @@ const LeaderboardPage = () => {
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">🏆 Лидерборд</h1>
-          <p className="text-gray-600">Топ участников по количеству очков за пройденные тесты</p>
+          <h1 className="text-3xl font-bold text-gray-900 mb-2">🏆 لوحة المتصدرين</h1>
+          <p className="text-gray-600">أفضل المشاركين حسب عدد النقاط المكتسبة من الاختبارات المجتازة</p>
         </div>
 
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -80,19 +80,19 @@ const LeaderboardPage = () => {
           ) : (
             <div className="text-center py-12">
               <div className="text-6xl mb-4">🎯</div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Пока никто не прошел тесты</h3>
-              <p className="text-gray-600">Станьте первым, кто пройдет тест и получит очки!</p>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">لم يجتز أحد الاختبارات بعد</h3>
+              <p className="text-gray-600"> كن أول من يجتاز الاختبار ويحصل على النقاط!</p>
             </div>
           )}
         </div>
 
         <div className="mt-8 bg-blue-50 rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-blue-900 mb-2">💡 Как набирать очки?</h3>
+          <h3 className="text-lg font-semibold text-blue-900 mb-2">💡 كيفية كسب النقاط؟?</h3>
           <ul className="text-blue-800 space-y-1">
-            <li>• Проходите тесты после изучения уроков</li>
-            <li>• За каждый пройденный тест получаете +5 очков</li>
-            <li>• Очки начисляются независимо от результата теста</li>
-            <li>• Участвуйте в лидерборде и соревнуйтесь с другими учениками!</li>
+            <li>• اجتز الاختبارات بعد دراسة الدروس</li>
+            <li>• احصل على +5 نقاط لكل اختبار مجتاز</li>
+            <li>• يتم احتساب النقاط بغض النظر عن نتيجة الاختبار</li>
+            <li>• شارك في لوحة المتصدرين وتنافس مع الطلاب الآخرين!!</li>
           </ul>
         </div>
       </div>
