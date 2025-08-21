@@ -287,9 +287,9 @@ export const Header = () => {
                       handleLogout();
                       setShowMobileMenu(false);
                     }}
-                    className="block w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50"
+                    className="block w-full text-right px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50"
                   >
-                    Выйти
+                    تسجيل الخروج
                   </button>
                 )}
               </div>
