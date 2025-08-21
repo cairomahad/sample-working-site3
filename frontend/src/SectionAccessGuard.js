@@ -106,16 +106,19 @@ const PromocodeEntryModal = ({ sectionTitle, onAccessGranted, currentEmail }) =>
     if (!promocode.trim()) return;
 
     setLoading(true);
-setError('');
+    setError('');
 
-if (promocode.trim() === VALID_PROMOCODE) {
-  onAccessGranted(email);
-} else {
-  setError('رمز ترويجي غير صحيح');
-}
+    if (promocode.trim() === VALID_PROMOCODE) {
+      // Сохраняем успешный ввод промокода
+      localStorage.setItem('promocode_entered', 'true');
+      localStorage.setItem('promocode_date', new Date().toISOString());
+      onAccessGranted(email);
+    } else {
+      setError('رمز ترويجي غير صحيح');
+    }
 
-setLoading(false);
-};
+    setLoading(false);
+  };
 
   return (
     <div className="min-h-screen bg-gray-50 flex items-center justify-center px-4">
