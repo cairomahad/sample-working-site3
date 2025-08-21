@@ -259,7 +259,7 @@ export const QAMainPage = () => {
                 onClick={() => navigate('/qa/popular')}
                 className="text-teal-600 hover:text-teal-700 font-medium"
               >
-                Показать все →
+                عرض الكل →
               </button>
             </div>
             <div className="space-y-4">
