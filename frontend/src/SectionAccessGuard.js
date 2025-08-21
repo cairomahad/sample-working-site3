@@ -172,7 +172,7 @@ setLoading(false);
                 onClick={() => setStep('email')}
                 className="text-teal-600 hover:text-teal-700 underline"
               >
-                Изменить email
+                تغيير البريد الإلكتروني
               </button>
             </div>
 
