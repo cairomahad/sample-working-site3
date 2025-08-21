@@ -49,12 +49,17 @@ import base64
 
 # Import admin supabase client
 try:
-    from admin_supabase_client import admin_supabase_client
-    ADMIN_SUPABASE_AVAILABLE = True
-    print("✅ Admin Supabase client доступен")
-except ImportError:
+    from admin_supabase_client import get_admin_supabase_client
+    admin_supabase_client = get_admin_supabase_client()
+    ADMIN_SUPABASE_AVAILABLE = admin_supabase_client is not None
+    if ADMIN_SUPABASE_AVAILABLE:
+        print("✅ Admin Supabase client доступен")
+    else:
+        print("❌ Admin Supabase client недоступен")
+except ImportError as e:
     ADMIN_SUPABASE_AVAILABLE = False
-    print("❌ Admin Supabase client недоступен")
+    admin_supabase_client = None
+    print(f"❌ Admin Supabase client недоступен: {e}")
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
