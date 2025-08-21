@@ -719,8 +719,8 @@ export const Lessons = ({ setCurrentPage }) => {
   const lessons = [
     {
       id: 1,
-      title: "Основы веры",
-      description: "Изучите пять столпов ислама и основные принципы веры",
+      title: "أساسيات العقيدة",
+      description: "تعلم أركان الإسلام الخمسة ومبادئ الإيمان الأساسية",
       image: "https://images.pexels.com/photos/7249250/pexels-photo-7249250.jpeg",
       duration: "15 мин",
       questions: 10,
