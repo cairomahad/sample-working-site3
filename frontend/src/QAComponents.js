@@ -201,7 +201,7 @@ export const QAMainPage = () => {
         {/* Featured Questions */}
         {featuredQuestions.length > 0 && (
           <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Рекомендуемые вопросы</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">الأسئلة المميزة</h2>
             <div className="grid gap-6 lg:grid-cols-3">
               {featuredQuestions.map((question) => (
                 <QuestionCard 
