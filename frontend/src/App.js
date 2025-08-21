@@ -227,15 +227,15 @@ const AboutPage = () => {
 
         {/* Navigation Section */}
         <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Исследуйте нашу платформу</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">استكشف منصتنا</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             <a
               href="/lessons"
               className="block p-6 bg-gradient-to-br from-teal-50 to-teal-100 rounded-xl hover:from-teal-100 hover:to-teal-200   text-center group"
             >
               <div className="text-3xl mb-3">📚</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Уроки</h3>
-              <p className="text-sm text-gray-600">Изучайте основы ислама</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">الدروس</h3>
+              <p className="text-sm text-gray-600">تعلم أساسيات الإسلام</p>
             </a>
             
             <a
@@ -243,8 +243,8 @@ const AboutPage = () => {
               className="block p-6 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl hover:from-blue-100 hover:to-blue-200   text-center group"
             >
               <div className="text-3xl mb-3">❓</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Вопросы и ответы</h3>
-              <p className="text-sm text-gray-600">Ответы имама на ваши вопросы</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">الأسئلة والأجوبة</h3>
+              <p className="text-sm text-gray-600">أجوبة الإمام على أسئلتك</p>
             </a>
             
             <a
@@ -252,8 +252,8 @@ const AboutPage = () => {
               className="block p-6 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl hover:from-yellow-100 hover:to-yellow-200   text-center group"
             >
               <div className="text-3xl mb-3">🏆</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Лидерборд</h3>
-              <p className="text-sm text-gray-600">Соревнуйтесь с другими</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">لوحة المتصدرين</h3>
+              <p className="text-sm text-gray-600">تنافس مع الآخرين</p>
             </a>
             
             <a
@@ -261,8 +261,8 @@ const AboutPage = () => {
               className="block p-6 bg-gradient-to-br from-green-50 to-green-100 rounded-xl hover:from-green-100 hover:to-green-200   text-center group"
             >
               <div className="text-3xl mb-3">🏠</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Главная</h3>
-              <p className="text-sm text-gray-600">Вернуться на главную</p>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">الرئيسية</h3>
+              <p className="text-sm text-gray-600">العودة إلى الرئيسية</p>
             </a>
           </div>
         </div>
