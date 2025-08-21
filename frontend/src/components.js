@@ -733,7 +733,7 @@ export const Lessons = ({ setCurrentPage }) => {
       image: "https://images.unsplash.com/photo-1582033131298-5bb54c589518",
       duration: "20 мин",
       questions: 15,
-      difficulty: "Средне"
+      difficulty: "متوسط"
     },
     {
       id: 3,
