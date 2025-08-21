@@ -166,7 +166,7 @@ setLoading(false);
             </div>
 
             <div className="text-sm text-gray-600 mb-4">
-              <p><strong>Email:</strong> {email}</p>
+              <p><strong>البريد الإلكتروني:</strong> {email}</p>
               <button
                 type="button"
                 onClick={() => setStep('email')}
