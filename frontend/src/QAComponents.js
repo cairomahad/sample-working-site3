@@ -232,7 +232,7 @@ export const QAMainPage = () => {
           {/* Recent Questions */}
           <section>
             <div className="flex items-center justify-between mb-6">
-              <h2 className="text-2xl font-bold text-gray-900">Последние вопросы</h2>
+              <h2 className="text-2xl font-bold text-gray-900">الأسئلة الأخيرة</h2>
               <button
                 onClick={() => navigate('/qa/recent')}
                 className="text-teal-600 hover:text-teal-700 font-medium"
