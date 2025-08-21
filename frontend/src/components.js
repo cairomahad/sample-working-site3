@@ -268,35 +268,36 @@ export const Header = () => {
                 >
                   حول المشروع
                 </Link>
-                
-                {!currentUser && (
-                  <button
-                    onClick={() => {
-                      setShowAuthModal(true);
-                      setShowMobileMenu(false);
-                    }}
-                    className="block w-full text-right px-3 py-2 rounded-md text-base font-medium text-white bg-teal-500 hover:bg-teal-600"
-                  >
-                    تسجيل الدخول
-                  </button>
-                )}
-                
-                {currentUser && (
-                  <div>
-                    <div className="px-3 py-2 text-sm text-gray-500">
-                      مرحباً، {currentUser.displayName || currentUser.email}
+
+                {/* Mobile Auth Section */}
+                <div className="border-t border-gray-100 pt-4 mt-4">
+                  {currentUser ? (
+                    <div>
+                      <div className="px-3 py-2 text-sm text-gray-500">
+                        مرحباً، {currentUser.displayName || currentUser.email}
+                      </div>
+                      <button
+                        onClick={() => {
+                          handleLogout();
+                          setShowMobileMenu(false);
+                        }}
+                        className="block w-full text-right px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50"
+                      >
+                        تسجيل الخروج
+                      </button>
                     </div>
+                  ) : (
                     <button
                       onClick={() => {
-                        handleLogout();
+                        setShowAuthModal(true);
                         setShowMobileMenu(false);
                       }}
-                      className="block w-full text-right px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-teal-600 hover:bg-gray-50"
+                      className="block w-full text-right px-3 py-2 rounded-md text-base font-medium bg-teal-500 text-white hover:bg-teal-600"
                     >
-                      تسجيل الخروج
+                      تسجيل الدخول
                     </button>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             </div>
           )}
