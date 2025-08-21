@@ -248,7 +248,7 @@ export const Header = () => {
                   }`}
                   onClick={() => setShowMobileMenu(false)}
                 >
-                  Вопросы и Ответы
+                  الأسئلة والأجوبة
                 </Link>
                 <Link
                   to="/leaderboard"
