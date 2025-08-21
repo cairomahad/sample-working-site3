@@ -266,7 +266,7 @@ export const Header = () => {
                   }`}
                   onClick={() => setShowMobileMenu(false)}
                 >
-                  О проекте
+                  حول المشروع
                 </Link>
                 
                 {!currentUser && (
