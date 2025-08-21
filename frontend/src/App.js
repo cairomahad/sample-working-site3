@@ -539,12 +539,12 @@ const LessonDetailRouter = () => {
         <Header />
         <div className="min-h-screen bg-white flex justify-center items-center">
           <div className="text-center">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Урок не найден</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">لم يتم العثور على الدرس</h2>
             <button
               onClick={() => navigate('/lessons')}
               className="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 "
             >
-              Вернуться к урокам
+              العودة إلى الدروس
             </button>
           </div>
         </div>
