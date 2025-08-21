@@ -746,8 +746,8 @@ export const Lessons = ({ setCurrentPage }) => {
     },
     {
       id: 4,
-      title: "История ислама",
-      description: "Познакомьтесь с историей возникновения и развития ислама",
+      title: "تاريخ الإسلام",
+      description: "تعرف على تاريخ نشأة وتطور الإسلام",
       image: "https://images.unsplash.com/photo-1655552090825-e12b509c83ca",
       duration: "30 мин",
       questions: 20,
