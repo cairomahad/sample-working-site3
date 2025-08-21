@@ -142,7 +142,7 @@ setLoading(false);
               type="submit"
               className="w-full bg-teal-600 text-white py-3 px-4 rounded-lg hover:bg-teal-700 focus:ring-2 focus:ring-teal-500 focus:ring-offset-2 transition duration-200"
             >
-              Продолжить
+              متابعة
             </button>
           </form>
         ) : (
