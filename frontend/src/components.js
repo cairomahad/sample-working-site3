@@ -847,8 +847,8 @@ export const Lessons = ({ setCurrentPage }) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="font-semibold text-gray-900">Прохождение теста</h3>
-                <p className="text-gray-600 text-sm">Отвечайте на вопросы по изученному материалу</p>
+                <h3 className="font-semibold text-gray-900">اجتياز الاختبار</h3>
+                <p className="text-gray-600 text-sm">أجب على أسئلة المادة المدروسة</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
