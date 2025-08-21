@@ -157,7 +157,7 @@ setLoading(false);
                 value={promocode}
                 onChange={(e) => setPromocode(e.target.value.toUpperCase())}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent text-center text-lg font-mono tracking-wider"
-                placeholder="ВВЕДИТЕ ПРОМОКОД"
+                placeholder="أدخل الرمز الترويجي"
                 required
               />
               {error && (
