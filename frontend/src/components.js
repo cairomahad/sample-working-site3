@@ -675,10 +675,10 @@ export const Leaderboard = () => {
                           {leader.name || 'مجهول'}
                         </h3>
                         <p className="text-gray-600 text-xs sm:text-sm hidden sm:block">
-                          Зарегистрирован: {leader.createdAt?.toDate ? leader.createdAt.toDate().toLocaleDateString('ru-RU') : leader.createdAt?.toLocaleDateString('ru-RU') || 'Недавно'}
+                          مسجل: {leader.createdAt?.toDate ? leader.createdAt.toDate().toLocaleDateString('ar-SA') : leader.createdAt?.toLocaleDateString('ar-SA') || 'مؤخراً'}
                         </p>
                         <p className="text-gray-600 text-xs sm:hidden">
-                          {leader.createdAt?.toDate ? leader.createdAt.toDate().toLocaleDateString('ru-RU', { month: 'short', day: 'numeric' }) : 'Недавно'}
+                          {leader.createdAt?.toDate ? leader.createdAt.toDate().toLocaleDateString('ar-SA', { month: 'short', day: 'numeric' }) : 'مؤخراً'}
                         </p>
                       </div>
                     </div>
