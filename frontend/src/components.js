@@ -239,7 +239,7 @@ export const Header = () => {
                   }`}
                   onClick={() => setShowMobileMenu(false)}
                 >
-                  Уроки
+                  الدروس
                 </Link>
                 <Link
                   to="/qa"
