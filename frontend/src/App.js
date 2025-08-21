@@ -608,7 +608,7 @@ const QAQuestionPageRouter = () => {
   return (
     <div className="App">
       <Header />
-      <SectionAccessGuard section="qa" sectionTitle="Вопросы и Ответы">
+      <SectionAccessGuard section="qa" sectionTitle="الأسئلة والأجوبة">
         <QAQuestionPage />
       </SectionAccessGuard>
     </div>
