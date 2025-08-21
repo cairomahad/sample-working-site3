@@ -751,7 +751,7 @@ export const Lessons = ({ setCurrentPage }) => {
       image: "https://images.unsplash.com/photo-1655552090825-e12b509c83ca",
       duration: "30 мин",
       questions: 20,
-      difficulty: "Сложно"
+      difficulty: "صعب"
     }
   ];
 
