@@ -193,7 +193,7 @@ export const Header = () => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden flex items-center space-x-2">
+            <div className="md:hidden flex items-center space-x-2 space-x-reverse">
               {currentUser && (
                 <button
                   onClick={() => setShowAuthModal(true)}
