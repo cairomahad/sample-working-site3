@@ -617,7 +617,7 @@ export const Leaderboard = () => {
       <div className="min-h-screen bg-gradient-to-br from-teal-50 to-blue-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-teal-500"></div>
-          <p className="mt-4 text-gray-600">Загрузка лидерборда...</p>
+          <p className="mt-4 text-gray-600">جاري تحميل لوحة المتصدرين...</p>
         </div>
       </div>
     );
