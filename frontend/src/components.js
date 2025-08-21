@@ -515,30 +515,30 @@ export const HeroSection = ({ onStartLearning }) => {
 export const WhyStudySection = () => {
   const benefits = [
     {
-      title: "Ислам - мировая религия",
-      description: "Узнайте о ценностях 1,8 миллиарда мусульман планеты."
+      title: "الإسلام - دين عالمي",
+      description: "تعرف على قيم 1.8 مليار مسلم في العالم."
     },
     {
-      title: "Духовная гармония",
-      description: "Найдите свой путь к Богу и подготовьтесь к вечной жизни."
+      title: "الانسجام الروحي",
+      description: "اعثر على طريقك إلى الله واستعد للحياة الأبدية."
     },
     {
-      title: "Знание истины",
-      description: "Развейте сомнения, не будьте заложниками внушенных стереотипов."
+      title: "معرفة الحقيقة",
+      description: "أزل الشكوك ولا تكن رهينة للصور النمطية المُلقنة."
     }
   ];
 
   return (
-    <section className="bg-teal-500 py-20">
+    <section className="bg-teal-500 py-20" dir="rtl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-8">
-              ПОЧЕМУ
+              لماذا
               <br />
-              ИЗУЧЕНИЕ ИСЛАМА
+              دراسة الإسلام
               <br />
-              ВАЖНО?
+              مهمة؟
             </h2>
           </div>
           
