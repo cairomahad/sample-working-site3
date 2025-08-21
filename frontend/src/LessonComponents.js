@@ -322,7 +322,7 @@ export const TestTaking = ({ testId, setCurrentPage }) => {
             onClick={() => setCurrentPage('lessons')}
             className="bg-teal-500 text-white px-6 py-3 rounded-lg hover:bg-teal-600 "
           >
-            Назад к урокам
+            العودة إلى الدروس
           </button>
         </div>
       </div>
