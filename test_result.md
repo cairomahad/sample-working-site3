@@ -64,7 +64,7 @@ USE_POSTGRES=false
 
 **Frontend .env**:
 ```
-REACT_APP_BACKEND_URL=https://dbconnector-1.preview.emergentagent.com
+REACT_APP_BACKEND_URL=https://data-bridge-15.preview.emergentagent.com
 ```
 
 ### 📦 Установленные зависимости
