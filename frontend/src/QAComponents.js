@@ -180,7 +180,7 @@ export const QAMainPage = () => {
                   type="text"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Поиск по вопросам..."
+                  placeholder="البحث في الأسئلة..."
                   className="w-full px-6 py-4 text-gray-900 rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-300"
                 />
                 <button
