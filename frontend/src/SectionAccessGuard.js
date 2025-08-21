@@ -149,7 +149,7 @@ setLoading(false);
           <form onSubmit={handlePromocodeSubmit} className="space-y-6">
             <div>
               <label htmlFor="promocode" className="block text-sm font-medium text-gray-700 mb-2">
-                Промокод
+                الرمز الترويجي
               </label>
               <input
                 type="text"
