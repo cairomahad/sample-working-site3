@@ -208,19 +208,19 @@ const AboutPage = () => {
             <li>مواد من مصادر موثقة</li>
           </ul>
 
-          <h3 className="text-xl font-semibold text-gray-900 mb-3">Как это работает:</h3>
+          <h3 className="text-xl font-semibold text-gray-900 mb-3">كيف يعمل:</h3>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center p-4 bg-teal-50 rounded-lg">
-              <h4 className="font-semibold text-gray-900 mb-2">1. Изучение</h4>
-              <p className="text-gray-600 text-sm">Читайте материалы урока</p>
+              <h4 className="font-semibold text-gray-900 mb-2">1. الدراسة</h4>
+              <p className="text-gray-600 text-sm">اقرأ مواد الدرس</p>
             </div>
             <div className="text-center p-4 bg-teal-50 rounded-lg">
-              <h4 className="font-semibold text-gray-900 mb-2">2. Тестирование</h4>
-              <p className="text-gray-600 text-sm">Проходите тесты на время</p>
+              <h4 className="font-semibold text-gray-900 mb-2">2. الاختبار</h4>
+              <p className="text-gray-600 text-sm">اجتاز الاختبارات المؤقتة</p>
             </div>
             <div className="text-center p-4 bg-teal-50 rounded-lg">
-              <h4 className="font-semibold text-gray-900 mb-2">3. Прогресс</h4>
-              <p className="text-gray-600 text-sm">Отслеживайте свои достижения</p>
+              <h4 className="font-semibold text-gray-900 mb-2">3. التقدم</h4>
+              <p className="text-gray-600 text-sm">تتبع إنجازاتك</p>
             </div>
           </div>
         </div>
