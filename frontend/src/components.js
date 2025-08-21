@@ -789,8 +789,8 @@ export const Lessons = ({ setCurrentPage }) => {
                 />
                 <div className="absolute top-4 left-4">
                   <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                    lesson.difficulty === 'Легко' ? 'bg-green-100 text-green-800' :
-                    lesson.difficulty === 'Средне' ? 'bg-yellow-100 text-yellow-800' :
+                    lesson.difficulty === 'سهل' ? 'bg-green-100 text-green-800' :
+                    lesson.difficulty === 'متوسط' ? 'bg-yellow-100 text-yellow-800' :
                     'bg-red-100 text-red-800'
                   }`}>
                     {lesson.difficulty}
