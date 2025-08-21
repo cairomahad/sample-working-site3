@@ -31,7 +31,7 @@ const CategoryCard = ({ category, onClick }) => {
             {CATEGORY_NAMES[category.name] || category.name}
           </h3>
           <p className="text-sm text-gray-600">
-            {category.count} {category.count === 1 ? 'вопрос' : category.count < 5 ? 'вопроса' : 'вопросов'}
+            {category.count} {category.count === 1 ? 'سؤال' : 'أسئلة'}
           </p>
         </div>
         <div className="text-teal-600">
