@@ -31,6 +31,7 @@ const HomePage = ({ setCurrentPage }) => {
   const [showAdminContact, setShowAdminContact] = useState(false);
   const [showStudentCourses, setShowStudentCourses] = useState(false);
   const [promocodeData, setPromocodeData] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchTeamMembers();
@@ -54,7 +55,7 @@ const HomePage = ({ setCurrentPage }) => {
   };
 
   const handleStartLearning = () => {
-    setCurrentPage('lessons');
+    navigate('/lessons');
   };
 
   return (
